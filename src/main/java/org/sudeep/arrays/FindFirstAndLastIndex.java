@@ -30,7 +30,7 @@ public class FindFirstAndLastIndex {
 
             if (target == nums[mid]) {
                 ans = mid;
-                high = mid - 1;
+                high = mid - 1; //continue searching left side
             } else if (target < nums[mid]) {
                 high = mid - 1;
             } else {
@@ -53,7 +53,7 @@ public class FindFirstAndLastIndex {
 
             if (target == nums[mid]) {
                 ans = mid;
-                low = mid + 1;
+                low = mid + 1;//continue searching right side
             } else if (target < nums[mid]) {
                 high = mid - 1;
             } else {
